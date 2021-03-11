@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dokdo&family=Gugi&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@500&family=Stylish&display=swap');
+body {
+  background-color: whitesmoke;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.koreanBox {
+  position: fixed;
+  top: 40%;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.font {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  position: absolute;
+  background: #e7e7e7;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 12px #ffffffb0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.font .topToDown {
+  color: #b1b1b1;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btnContainer {
+  position: relative;
+  top: 100px;
+}
+
+.btnContainer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  background: black;
+  width: 465px;
+  height: 3px;
+}
+
+.btnContainer button {
+  margin: 15px;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btnContainer button:nth-child(1) {
+  font-family: 'Nanum Myeongjo', serif;
+}
+.btnContainer button:nth-child(2) {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.btnContainer button:nth-child(3) {
+  font-family: 'Stylish', sans-serif;
+}
+.btnContainer button:nth-child(4) {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.btnContainer button:nth-child(5) {
+  font-family: 'Gugi', cursive;
+}
+.btnContainer button:nth-child(6) {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.moveEnglishBtn {
+  font-family: 'Noto Sans KR', sans-serif;
+  position: absolute;
+  bottom: 100px;
+  color: grey;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.moveEnglishBtn:hover {
+  color: black;
+}

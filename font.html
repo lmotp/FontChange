@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="koreanfont.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="koreanBox">안녕, 나는 한국어 폰트</div>
+      <div class="font"><p class="topToDown">'한' 버튼을 클릭해주세요</p></div>
+      <div class="btnContainer">
+        <button class="koreanBtn" onclick="changeBtn('Nanum Myeongjo')">한</button>
+        <button class="koreanBtn" onclick="changeBtn('Nanum Gothic')">한</button>
+        <button class="koreanBtn" onclick="changeBtn('Stylish')">한</button>
+        <button class="koreanBtn" onclick="changeBtn('Noto Sans KR')">한</button>
+        <button class="koreanBtn" onclick="changeBtn('Gugi')">한</button>
+        <button class="koreanBtn" onclick="changeBtn('Black Han Sans')">한</button>
+      </div>
+      <a class="moveEnglishBtn" href="index.html">외국어 폰트 ~✈</a>
+    </div>
+  </body>
+  <script>
+    const koreanBtn = document.querySelectorAll('.koreanBtn');
+    const koreanBox = document.querySelector('.koreanBox');
+    const font = document.querySelector('.font');
+
+    const changeBtn = (fontFamily) => (koreanBox.style.fontFamily = fontFamily);
+
+    koreanBtn.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        const value = koreanBox.style.fontFamily;
+        font.textContent = value;
+      });
+    });
+  </script>
+</html>
