@@ -3,7 +3,7 @@ const container = document.querySelector('.container');
 const btn = document.querySelector('.btn');
 const copywindow = document.querySelector('.copywindow');
 const copyContent = document.querySelector('.copyContent');
-const API_KEY = 'AIzaSyCQ1zv24SjzncA9TExyceWxcq_QxqvcDn8';
+const API_KEY;
 let fontsList = [];
 
 // 폰트색상 변경
